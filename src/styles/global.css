@@ -133,6 +133,14 @@ article header h4 {
   padding-bottom: 0;
 }
 
+.blog--header {
+  margin-bottom: 1.25rem;
+}
+
+.blog--header  h1{
+  margin: 0;
+}
+
 .blog--date {
   color: #087E8B;
   font-size: .7rem;

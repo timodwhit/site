@@ -1,7 +1,7 @@
 ---
 template: post
 title: The Incredible Hulk
-slug: hulk
+slug: not-so-incredible-hulk
 date: "2020-05-03T00:00:00Z"
 description: "We need to talk. I did not like you when you weren't angry."
 category: personal

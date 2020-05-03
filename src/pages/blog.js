@@ -39,7 +39,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark (
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: DESC },
       filter: { frontmatter: { template: { eq: "post" } } }
     ) {
       edges {
