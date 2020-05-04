@@ -7,9 +7,8 @@ dates: July 2016 - March 2019
 location: Remote
 order: 20
 ---
-Co-architected and led migration of 40+ legacy single sites into a single codebase and platform. Authored and developed stories for a product's platform to increase speed of delivery and optimization/reuse of code.
+Acquia Cloud Site Factory hosted Drupal 8 multisite platform serving 3500+ high traffic investor relations enterprise sites through a single code repo. Platform served over a quarter billion origin views a month.
 
-Helped onboard non-Drupal developers into the new Drupal platform and helped to lead the off-shore team in migration efforts off of a deprecated platform.
+Scrum Master and lead developer delivering new features and maintenance support. Co-created automation scripts to help  on board 100+ developers into the system for site building and migrating of 2 legacy platforms.
 
-Worked globally to help understand and execute business demands, reduce technology costs and further company mission/goals of selling Travel Insurance through white labeled sites. Actively planned, prioritized and lead sprints to ensure delivery goals were met.
-
+Worked collaboratively across technology stacks and teams to deliver APIs, custom functionality and optimized performance. Further, co-led quarterly deployments and updates to the whole factory of sites.
