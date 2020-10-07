@@ -1,6 +1,6 @@
 ---
 template: post
-title: "What goes in a spoonfuls?"
+title: "What goes in a spoon?"
 slug: spoonfuls
 date: "2020-10-07T01:28:00Z"
 description: "I just want to eat it with a spoon"
