@@ -3,7 +3,7 @@ template: post
 title: "Judges"
 slug: judges
 date: "2020-10-17T22:28:00Z"
-description: "You judge lest you be judged"
+description: "Judge not, lest ye be judges"
 category: personal
 ---
 This week Amy Coney Barrett went through the Senate Judiciary Committee hearings. Today I voted. Tonight I watched "The Trial of the Chicago 7". 
