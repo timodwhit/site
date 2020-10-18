@@ -30,7 +30,7 @@ The problem with this:
   1. When were the surveyors in the courtroom? Was it prelunch? Was it post? [Hungry?](http://journal.sjdm.org/16/16823/jdm16823.html)
   
 The Trial of the Chicago 7 was an Aaron Sorkin piece that was striking because of the similarity to the situation we currently find ourselves in. 
-we are at the behaest of strong men playing games in the shadows with people's lives, rights and futures. We have seen how the McConnell senate has
+we are at the behest of strong men playing games in the shadows with people's lives, rights and futures. We have seen how the McConnell senate has
 reshaped the courts for a lifetime to come and this movie shows the danger of the court in a political trial. 
 
 Amy Coney Barrett showed this week that the courts are political. By non-answers on basic facts and laws, she was signaling to the administration
