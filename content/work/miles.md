@@ -3,7 +3,7 @@ template: work
 title: Miles
 role: Technical Architect / Lead Web Developer
 slug: miles
-dates: August 2014 -July 2016
+dates: August 2014 - July 2016
 location: Superior, CO
 order: 15
 ---
