@@ -1,7 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BlogTeaser from "../components/blog-teaser"
+import { BlogTeaser } from "../components/blog-teaser"
+import { graphql } from "gatsby"
 
 const BlogPageIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -38,8 +39,8 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark (
-      sort: { fields: [frontmatter___date], order: DESC },
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { template: { eq: "post" } } }
     ) {
       edges {

@@ -6,6 +6,7 @@ date: "2016-09-22T16:30:00Z"
 description: "That's essentially it."
 category: dev
 ---
+
 There are some great posts about breadcrumbs in Drupal 8:
 
 - [Drupal 8 Breadcrumbs - Add the Current Page - Greg Boggs](http://www.gregboggs.com/drupal8-breadcrumbs/)
@@ -45,5 +46,3 @@ function THEMENAME_preprocess_breadcrumb(&$variables) {
   );
 }
 ```
-
-

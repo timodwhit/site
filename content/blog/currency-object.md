@@ -6,6 +6,7 @@ date: "2020-05-03T15:00:00Z"
 description: "Objects are more than just scaffolding, they are an API for you and your devs to use."
 category: dev
 ---
+
 Objects in PHP have been around for a while now. And objects in Drupal have as well, but Drupal was predominately filled (and still suffers the fate) of being tied to
 arrays and their inherent inability to expose what can and can't be on an object.
 
@@ -13,6 +14,7 @@ Here is an example of a useful object when working on sites that may have
 different display variants for a currency.
 
 ### Array Version
+
 ```php
 $currency = [
   'suffix' => '$',
@@ -22,6 +24,7 @@ $currency = [
   'thousands-separator' => ',',
 ];
 ```
+
 Not too bad.. And let's create a function to auto generate that array for ease
 of use and possible debugging.
 
@@ -143,19 +146,17 @@ function formatValueWithCurrency($value, array $currencyFormat) {
   return $prefix . number_format($value, $decimals, $decPoint, $thousandsSeparator) . $suffix;
 }
 ```
+
 Things to note:
+
 - Because we have to check the array value and assume a default, we are now
-doubling our locations of default values.
+  doubling our locations of default values.
 - You could call the getCurrencyFormat array function in the formatValueWithCurrency,
-but it is possible that you want to get the currency from a Node or some user
-defined value and thus would need to pass the value.
+  but it is possible that you want to get the currency from a Node or some user
+  defined value and thus would need to pass the value.
 - Arrays are cumbersome and don't guarantee properties exist. They are simple
-buckets you can throw your mistakes into.
+  buckets you can throw your mistakes into.
 
-
- So please just make it an object if there is any reuse to it and if it is a
- piece of standardized data. If you find yourself, constantly calling nested
- values on an array, it might be time to refactor into an object.
-
-
-
+So please just make it an object if there is any reuse to it and if it is a
+piece of standardized data. If you find yourself, constantly calling nested
+values on an array, it might be time to refactor into an object.

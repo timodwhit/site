@@ -1,19 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 
-function BlogTeaser(node) {
+export const BlogTeaser = node => {
   const title = node.frontmatter.title || node.fields.slug
   return (
-    <article key={node.fields.slug} >
+    <article key={node.fields.slug}>
       <header>
         <h3>
-          <Link to={node.fields.slug}>
-            {title}
-          </Link>
+          <Link to={node.fields.slug}>{title}</Link>
         </h3>
-        <div class="blog--date">
-          {node.frontmatter.date}
-        </div>
+        <div className="blog--date">{node.frontmatter.date}</div>
       </header>
       <section>
         <p
@@ -25,5 +21,3 @@ function BlogTeaser(node) {
     </article>
   )
 }
-
-export default BlogTeaser

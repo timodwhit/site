@@ -6,12 +6,15 @@ date: "2018-06-18T16:30:00Z"
 description: "Do you really need that complexity?"
 category: dev
 ---
+
 Does that sound like clickbait, sure. Is it true, yes!
 
 ## Backstory
+
 I am a Drupal developer and have used SASS a fair amount. I have actually given talks on how to use SASS and at one point was maintaining a SASS starter template and a Drupal theme that used a complex partial structure.Further, I bought SASS hook line and sinker as the way forward and the answer to short comings of CSS.
 
 ## Problem
+
 Here’s the thing: I get your problems. Variables rock. CSS kinda sucks with them. It also sucks remembering what the HEX color of the f-ing green that is used in 5 places, but a really critical five places.
 
 But the big question are: Do you need what your doing? Does SASS empower the platform or does it just empower you? Is there a difference?
@@ -20,22 +23,23 @@ The answer: By using SASS you are being selfish. You are putting your developmen
 
 I’m sorry, but you know it is true.
 
-__Task__: Go back to a project you worked on 3 years ago and try to make a small sass edit.
+**Task**: Go back to a project you worked on 3 years ago and try to make a small sass edit.
 
 I’ll wait… Still waiting… And still waiting…
 
 During this time, you have:
-1) fixed all the libraries that have deprecated or have dependencies updated.
-1) Fixed all the issues with the node version or ruby version you are using
-1) tried to remember which partials do what
-1) Said “fuck” a lot of times because you can’t remember the variables and what they do and you have to refer to that partial (you know the one, _variables.scss)
-1) Tried to make sure you weren’t breaking anything because you were kind of lazy (a chief proponent for you choosing SASS in the first place)
+
+1. fixed all the libraries that have deprecated or have dependencies updated.
+1. Fixed all the issues with the node version or ruby version you are using
+1. tried to remember which partials do what
+1. Said “fuck” a lot of times because you can’t remember the variables and what they do and you have to refer to that partial (you know the one, \_variables.scss)
+1. Tried to make sure you weren’t breaking anything because you were kind of lazy (a chief proponent for you choosing SASS in the first place)
 
 So here is my recommendation: Use small CSS files and attach wisely.
 
 CSS is still how the web works.
 
-SASS compiles to CSS. And it is likely to stay that way. You will not ship SASS to production and nor should you. You would be ashamed once you exposed your architecture to those who architect*.
+SASS compiles to CSS. And it is likely to stay that way. You will not ship SASS to production and nor should you. You would be ashamed once you exposed your architecture to those who architect\*.
 
 CSS has gotten good. It isn’t everything and writing it still is laborious. Nesting stuff is just so much better…
 

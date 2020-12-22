@@ -8,5 +8,5 @@
 import "./src/styles/global.css"
 import "./src/styles/prism.css"
 
-require('prismjs');
+require("prismjs")
 require("prismjs/themes/prism-twilight.css")

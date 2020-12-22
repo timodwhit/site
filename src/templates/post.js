@@ -15,16 +15,12 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
-          <header class="blog--header">
-            <h1>
-              {post.frontmatter.title}
-            </h1>
-            <div class="blog--date">
-              {post.frontmatter.date}
-            </div>
+          <header className="blog--header">
+            <h1>{post.frontmatter.title}</h1>
+            <div className="blog--date">{post.frontmatter.date}</div>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr/>
+          <hr />
         </article>
       </Layout>
     )

@@ -17,6 +17,7 @@ In Drupal, we regularly have to override a template for some reason or another, 
 ```
 
 Now, out of the box, extending core templates is only so good, because nothing is wrapped in a twig-block. What we need to do is edit the template and start wrapping the components we will want to extend in blocks.
+
 ```php
 {# Core Example #}
 <div class=”l-content”>
@@ -88,6 +89,7 @@ The above would cause you to loose the title, action links, and tabs. Only print
 After this, you should try to use the parent() function, this will grab the content of the parent block. The only limit of this is that the div.l-content would still be wrapping the content of the block.
 
 To achieve the removal and replacement of the div.l-content, you’ll need a small amount of trickery.
+
 ```php
 {# Extend it like its hot #} {% block content %} {# This lets us change our content block #}
  <div class=”blog-wrapper”>
@@ -98,10 +100,10 @@ To achieve the removal and replacement of the div.l-content, you’ll need a sma
  </div>{# /.blog-wrapper #}
 {% endblock %}
 ```
+
 This will print the parent blocks content and then print page content as desired.
 Overall
 
 This is clearly a lot easier than it was with phptemplate engine and it allows for you to quickly get the desired results. If you find a flaw want more, feel free to leave a comment. To read more about extending checkout the twig documentation.
-
 
 _Originally published at www.newmediadenver.com._
