@@ -3,7 +3,7 @@ template: work
 title: Contractor - RedHat
 role: Senior Software Engineer
 slug: redhat
-dates: May 2020 - Current
+dates: May 2020 - Dec 2020
 location: Remote
 order: 35
 ---
