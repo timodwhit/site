@@ -21,8 +21,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.1
 
-      - run: cd /home/runner/work/site
       - run: npm install -g gatsby-cli
       
-      - run: yarn install && yarn run deploy
+      - run: cd /home/runner/work/site && yarn install && yarn run deploy
       
