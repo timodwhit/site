@@ -37,22 +37,19 @@ const AboutPage = ({ data, location }) => {
         <table className="technologies--table">
           <tbody>
             <tr>
-              <td>React</td>
               <td>Typescript</td>
-              <td>Node.js</td>
-              <td>JS/CSS/HTML</td>
-            </tr>
-            <tr>
               <td>PHP</td>
-              <td>Drupal 8</td>
-              <td>Drupal 7</td>
-              <td>Composer</td>
+              <td>Python</td>
             </tr>
             <tr>
+              <td>React</td>
+              <td>Drupal</td>
+              <td>Node.js</td>
+            </tr>
+            <tr>
+              <td>AWS</td>
               <td>OpenShift/Kubernetes</td>
               <td>Docker</td>
-              <td>Vagrant</td>
-              <td>Ansible & Chef</td>
             </tr>
           </tbody>
         </table>
