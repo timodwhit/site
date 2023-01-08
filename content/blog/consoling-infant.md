@@ -3,7 +3,7 @@ template: post
 title: "Consoling an Infant at 2am"
 slug: sleepy-nights
 date: "2023-01-08T16:48:00Z"
-description: "The internet is a hellscape for parenting advice; I live deep within in."
+description: "The internet is a hellscape for parenting advice; I live deep within it."
 category: personal
 ---
 
