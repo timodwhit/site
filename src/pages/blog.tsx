@@ -40,8 +40,8 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { template: { eq: "post" } } }
+      sort: {frontmatter: {date: DESC}}
+      filter: {frontmatter: {template: {eq: "post"}}}
     ) {
       edges {
         node {
@@ -54,7 +54,6 @@ export const pageQuery = graphql`
             template
             title
             description
-            category
             slug
           }
         }

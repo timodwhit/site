@@ -60,12 +60,6 @@ module.exports = {
               maxWidth: 590,
             },
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
         ],
@@ -90,14 +84,16 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { template: { eq: "post" } } }
+                  sort: {frontmatter: {date: DESC}}
+                  filter: {frontmatter: {template: {eq: "post"}}}
                 ) {
                   edges {
                     node {
                       excerpt
                       html
-                      fields { slug }
+                      fields {
+                        slug
+                      }
                       frontmatter {
                         title
                         date

@@ -7,7 +7,6 @@ import { WorkItem } from "../components/WorkItem"
 const AboutPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const workPosts = data.allMarkdownRemark.edges
-  console.log(data)
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
@@ -109,8 +108,8 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___order] }
-      filter: { frontmatter: { template: { eq: "work" } } }
+      sort: {frontmatter: {order: DESC}}
+      filter: {frontmatter: {template: {eq: "work"}}}
     ) {
       edges {
         node {
