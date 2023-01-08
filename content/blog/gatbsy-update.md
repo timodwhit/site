@@ -1,6 +1,6 @@
 ---
 template: post
-title: "Was Gatsby the right choide?"
+title: "Was Gatsby the right choice?"
 slug: gatsby-update
 date: "2023-01-08T17:01:00Z"
 description: "I just want to manage my content as markdown and for the rest to just work"
