@@ -8,8 +8,10 @@ location: Remote
 order: 40
 ---
 
-- Developed and managed APIs for cloud based processing of of LiDAR data.
-- Created and developed platform to manage and visualize LiDAR data. Drupal CMS with React (typescript) frontend for 3D modeling & visualization.
+- Led development team and product level decision through agile processes
+- Developed and managed APIs for cloud based processing of LiDAR data
+- Created and maintained platform to manage, process and visualize LiDAR data.
+- Created and maintained react app to richly interact with geospatial data.
 - Developed E-Commerce Integrations with Stripe for subscription model and token purchasing.
 - Managed AWS EC2 and S3 instances for large scale data throughput.
 - Maintained Python package to process LiDAR data.
