@@ -17,14 +17,6 @@ const AboutPage = ({ data, location }) => {
         <div className="about">
           <h2 className="work--heading">About</h2>
           <p>
-            Born and raised a child of two midwestern-ers, Tim isn't sure if he
-            should discuss himself in first person or third. He is often
-            conflicted by this and tends to opt for the first person except when
-            writing an about statement. If you made it this far, congratulations
-            3 sentences is quite a feat of endurance in our modern world.
-          </p>
-          <p>
-            {" "}
             Thank you for taking the time to visit my site. If you are looking
             for a passionate leader, web-evangelist or just another pun please
             reach out.
