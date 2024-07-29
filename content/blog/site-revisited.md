@@ -1,7 +1,7 @@
 ---
 template: post
 title: "My Site. Revisited. Again"
-slug: stop-sass
+slug: site-vnext
 date: "2024-07-29T16:30:00Z"
 description: "It depends."
 category: dev
