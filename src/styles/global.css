@@ -1,11 +1,13 @@
+
 #site-header {
-  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
   max-width: 960px;
-  margin: 20px auto;
   clear: both;
-  height: 90px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;;
 }
 
 main  {
@@ -30,7 +32,7 @@ footer {
 
 
 #logo svg{
-  max-height: 70px;
+  height: 60px;
   float: left;
 }
 
@@ -45,35 +47,21 @@ footer {
 .logo--primary {
   fill: #F96F5D;
 }
-
-/*#logo-name {
-  display: none;
-}
-
-#logo:hover #logo-name {
-  display: block;
-}*/
 .header-nav {
-  float: right;
+  align-content: center;
 }
 
 .nav-ul {
-  display: block;
+  align-items: center;
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .nav-li {
-  display: inline-block;
-  padding: 10px;
-  height: 70px;
+  padding: 0 10px;
   margin: 0;
-}
-
-.nav-li a {
-  display: block;
-  height: 70px;
 }
 
 .gatsby-highlight pre[class*="language-"] {
@@ -93,13 +81,15 @@ article header h3 {
 article header h4 {
   margin-bottom: 0rem;
 }
-
 .work--article {
   border-bottom: 1px solid #aaa;
   margin-bottom: 20px;
 }
 .work--article:last-of-type {
   border-bottom: none;
+}
+.work--article section h4 {
+  margin-bottom: 0.2rem;
 }
 
 .work--article header {
@@ -124,7 +114,10 @@ article header h4 {
 
 .work--heading {
   border-bottom: 2px solid #ccc;
+}
 
+li {
+  margin-bottom: 0.1rem;
 }
 
 .technologies--table td {

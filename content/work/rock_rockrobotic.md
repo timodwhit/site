@@ -7,7 +7,7 @@ dates: Dec 2020 - July 2024
 location: Remote
 order: 40
 ---
-### Management
+#### Management
 - Managed AWS infrastructure for processing 
 - Led a team of worldwide developers in the creation of new products and support of existing products through Agile practices and team rituals
 - Support customer success with triaging and resolving customer tickets
@@ -15,14 +15,14 @@ order: 40
 - ~1200 tickets Managed and created with a 90% completion rate across a 5 person dev team
 - Work cross departmental to understand business requirements and deliver effective solutions 
 
-### Backend
+#### Backend
 - Developed APIs for cloud-based LiDAR data processing and created a comprehensive platform for managing, processing, and visualizing LiDAR data
 - Implemented licensing model that enabled in-house hardware processing and catalyzed the launch of new product lines
 - Architected and engineered a message queue architecture for asynchronous LiDAR data processing and co-maintained a Python package for specialized data processing
 - Developed CI/CD to build, distribute and update Electron app
 - Utilized AWS Cloudfront to serve over 3000GB/month with 12 million requests
 
-### Frontend 
+#### Frontend 
 - Developed Electron based desktop application integrating React and NodeJS (ROCK Desktop); in-housing licensing and revenue from products.
 - Designed and implemented custom UI/UX, based on MUI, for processing, managing and sharing data
 - Implemented bespoke, highly performant rendering of large datasets using WebGL and ThreeJS
@@ -37,4 +37,3 @@ order: 40
 - Contributed to the development of the COPC file format, enhancing data handling efficiency
 - Used Web Workers and ThreeJS to calculate and visualize volume from millions of points
 - Enhanced data visualization capabilities by developing a map display integrating contours, trajectory, photos, and more, significantly improving product functionality
-

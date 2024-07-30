@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "tim-whitney-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple site for Tim Whitney",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Tim Whitney (tim.d.whitney@gmail.com)",
   "dependencies": {
     "gatsby": "^5.9.1",
     "gatsby-plugin-feed": "^5.3.1",
@@ -29,6 +29,7 @@
     "typography-theme-moraga": "^0.16.19"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "eslint": "^8.31.0",
