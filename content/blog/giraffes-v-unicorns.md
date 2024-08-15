@@ -1,7 +1,7 @@
 ---
 template: post
 title: "Search for Giraffes (not unicorns)"
-slug: giraffes
+slug: giraffes-v-unicorns
 date: "2024-08-15T00:00:00Z"
 description: "Mainly because they actually exist..."
 category: dev
