@@ -1,83 +1,66 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby"
+import type { ComponentProps } from "react"
 
-const SEO = ({ description, lang, meta, title }) => {
-	const { site } = useStaticQuery(
-		graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author {
-              name
-            }
+type SEOProps = {
+  title: string
+  description?: string
+  lang?: string
+  meta?: ComponentProps<"meta">[]
+}
+
+const SEO = ({ description = "", lang = "en", meta = [], title }: SEOProps) => {
+  const { site } = useStaticQuery(graphql`
+    query SiteMetadataForHead {
+      site {
+        siteMetadata {
+          title
+          description
+          author {
+            name
           }
         }
       }
-    `,
-	);
+    }
+  `)
+  const metaDescription = description || site.siteMetadata.description
 
-	const metaDescription = description || site.siteMetadata.description;
+  return (
+    <>
+      <html lang={lang} />
+      <title>{`${title} | ${site.siteMetadata.title}`}</title>
+      <link
+        rel="stylesheet"
+        href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300i,700"
+      />
+      <meta id="description" name="description" content={metaDescription} />
+      <meta id="og:title" property="og:title" content={title} />
+      <meta
+        id="og:description"
+        property="og:description"
+        content={metaDescription}
+      />
+      <meta id="og:type" property="og:type" content="website" />
+      <meta id="twitter:card" name="twitter:card" content="summary" />
+      <meta
+        id="twitter:creator"
+        name="twitter:creator"
+        content={site.siteMetadata.author.name}
+      />
+      <meta id="twitter:title" name="twitter:title" content={title} />
+      <meta
+        id="twitter:description"
+        name="twitter:description"
+        content={metaDescription}
+      />
+      {meta.map(tag => (
+        <meta
+          {...tag}
+          id={tag.id || tag.name || tag.property}
+          key={tag.id || tag.name || tag.property}
+        />
+      ))}
+    </>
+  )
+}
 
-	return (
-		<Helmet
-			htmlAttributes={{
-				lang,
-			}}
-			title={title}
-			titleTemplate={`%s | ${site.siteMetadata.title}`}
-			meta={[
-				{
-					name: `description`,
-					content: metaDescription,
-				},
-				{
-					property: `og:title`,
-					content: title,
-				},
-				{
-					property: `og:description`,
-					content: metaDescription,
-				},
-				{
-					property: `og:type`,
-					content: `website`,
-				},
-				{
-					name: `twitter:card`,
-					content: `summary`,
-				},
-				{
-					name: `twitter:creator`,
-					content: site.siteMetadata.author,
-				},
-				{
-					name: `twitter:title`,
-					content: title,
-				},
-				{
-					name: `twitter:description`,
-					content: metaDescription,
-				},
-			].concat(meta)}
-		/>
-	);
-};
-
-SEO.defaultProps = {
-	lang: `en`,
-	meta: [],
-	description: ``,
-};
-
-SEO.propTypes = {
-	description: PropTypes.string,
-	lang: PropTypes.string,
-	meta: PropTypes.arrayOf(PropTypes.object),
-	title: PropTypes.string.isRequired,
-};
-
-export default SEO;
+export default SEO

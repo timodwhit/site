@@ -1,12 +1,36 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-	"organizeImports": {
-		"enabled": true
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true
-		}
-	}
+  "$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!node_modules",
+      "!public",
+      "!.cache",
+      "!coverage",
+      "!test-results",
+      "!playwright-report",
+      "!content",
+      "!**/*.md",
+      "!pnpm-lock.yaml",
+      "!src/styles/typography.css"
+    ]
+  },
+  "formatter": { "indentStyle": "space", "indentWidth": 2 },
+  "javascript": {
+    "formatter": { "semicolons": "asNeeded", "arrowParentheses": "asNeeded" }
+  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "linter": { "enabled": true, "rules": { "preset": "recommended" } },
+  "overrides": [
+    {
+      "includes": [
+        "src/components/blog-teaser.tsx",
+        "src/components/WorkItem.tsx",
+        "src/templates/post.js"
+      ],
+      "linter": {
+        "rules": { "security": { "noDangerouslySetInnerHtml": "off" } }
+      }
+    }
+  ]
 }

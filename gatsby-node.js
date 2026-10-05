@@ -14,7 +14,7 @@ exports.createPages = async ({ graphql, actions }) => {
     `
       {
         allMarkdownRemark(
-          sort: {frontmatter: {date: DESC}}
+          sort: [{frontmatter: {date: DESC}}, {frontmatter: {title: ASC}}]
           limit: 1000
         ) {
           edges {
@@ -30,7 +30,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-    `
+    `,
   )
 
   if (result.errors) {
@@ -39,11 +39,11 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges.filter(
-    edge => edge.node.frontmatter.template === "post"
+    edge => edge.node.frontmatter.template === "post",
   )
 
   const blogPost = path.resolve(`./src/templates/post.js`)
-  posts.forEach((post, index) => {
+  posts.forEach(post => {
     createPage({
       path: post.node.fields.slug,
       component: blogPost,

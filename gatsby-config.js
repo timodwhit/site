@@ -1,4 +1,5 @@
 module.exports = {
+  jsxRuntime: "automatic",
   siteMetadata: {
     title: `Tim Whitney`,
     description: `Personal Site for Tim Whitney`,
@@ -45,12 +46,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -84,7 +79,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  sort: {frontmatter: {date: DESC}}
+                  sort: [{frontmatter: {date: DESC}}, {frontmatter: {title: ASC}}]
                   filter: {frontmatter: {template: {eq: "post"}}}
                 ) {
                   edges {
@@ -109,6 +104,5 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-react-helmet`,
   ],
 }

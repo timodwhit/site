@@ -1,21 +1,19 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "target": "esnext",
-    "jsx": "preserve",
-    "lib": [
-      "dom",
-      "esnext"
-    ],
+    "jsx": "react-jsx",
+    "lib": ["dom", "esnext"],
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "noImplicitAny": false
+    "allowJs": true,
+    "checkJs": false,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "types": ["node", "vitest/globals", "@testing-library/jest-dom"]
   },
-  "exclude": [
-    "node_modules",
-    "public",
-    ".cache"
-  ]
+  "include": ["src", "tests", "playwright.config.ts"]
 }

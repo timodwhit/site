@@ -1,24 +1,21 @@
-import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import { BlogTeaser } from "../components/blog-teaser";
-import { graphql } from "gatsby";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { BlogTeaser } from "../components/blog-teaser"
+import { graphql } from "gatsby"
 
-const BlogIndex = ({ data, location }) => {
-	const siteTitle = data.site.siteMetadata.title;
-	const posts = data.allMarkdownRemark.edges;
+const BlogIndex = ({ data }) => {
+  const posts = data.allMarkdownRemark.edges
 
-	return (
-		<Layout location={location} title={siteTitle}>
-			<SEO title="Home" />
-			{posts.map(({ node }) => (
-				<BlogTeaser key={node.fields.slug} node={node} />
-			))}
-		</Layout>
-	);
-};
+  return (
+    <Layout>
+      {posts.map(({ node }) => (
+        <BlogTeaser key={node.fields.slug} node={node} />
+      ))}
+    </Layout>
+  )
+}
 
-export default BlogIndex;
+export default BlogIndex
 
 export const pageQuery = graphql`
   query {
@@ -28,7 +25,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: {frontmatter: {date: DESC}}
+      sort: [{frontmatter: {date: DESC}}, {frontmatter: {title: ASC}}]
       filter: {frontmatter: {template: {eq: "post"}}}
     ) {
       edges {
@@ -49,4 +46,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
+
+export const Head = () => <SEO title="Home" />

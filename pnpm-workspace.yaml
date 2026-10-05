@@ -1,0 +1,13 @@
+nodeLinker: hoisted
+# Gatsby discovers plugins and loaders through a flat node_modules layout.
+allowBuilds:
+  "@parcel/watcher": true
+  esbuild: true
+  gatsby: true
+  gatsby-cli: true
+  lmdb: true
+  msgpackr-extract: true
+  sharp: true
+  core-js: false
+  core-js-pure: false
+  es5-ext: false
